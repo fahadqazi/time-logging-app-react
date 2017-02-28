@@ -69,12 +69,12 @@ class TimerForm extends React.Component{
                             <label>Project</label>
                             <input type='text' defaultValue={this.props.project}/>
                         </div>
-                        <div className="ui two bottom attached button">
+                        <div className="ui two bottom attached buttons">
                             <button className="ui basic blue button">
                                 {submitText}
                             </button>
                             <button className="ui basic red button">
-                                {Cancel}
+                                Cancel
                             </button>
                         </div>
                     </div>
@@ -135,3 +135,8 @@ class Timer extends React.Component{
         );
     }
 }
+
+ReactDOM.render(
+    <TimersDashboard />, 
+    document.getElementById('content')
+);
